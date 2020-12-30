@@ -1,0 +1,15 @@
+<body>
+    <div id="pasek">
+        <a href="/" id="upload">upload</a>
+        <a href="/filemanager" id="filemanager">filemanager</a>
+        <a href="/info" id="info">info</a>
+    </div>
+    <div id="usun">
+        <a href="/usuwanie">Usuń wszystko</a>
+    </div>
+    <table>
+        {{#each pliki}}
+        {{> manager}}
+        {{/each}}
+    </table>
+</body>

@@ -1,0 +1,12 @@
+<body>
+    <div id="pasek">
+        <a href="/" id="upload">upload</a>
+        <a href="/filemanager" id="filemanager">filemanager</a>
+        <a href="/info" id="info">info</a>
+    </div>
+
+    <form enctype="multipart/form-data" method="POST" action="/handleUpload">
+        <input type="file" multiple required accept="/" name="imageupload">
+        <input type="submit" value="Wyślij" name="sendFile">
+    </form>
+</body>
